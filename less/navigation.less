@@ -1,0 +1,34 @@
+.navigation {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    border-bottom: 1px solid darkgray;
+
+    .nav-bar {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .logo {
+            grid-column-start: 1; 
+        }
+
+        .nav-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            grid-column-start: 2;
+            
+
+            .nav-item {
+                text-decoration: none;
+            }
+        }
+           
+
+    }
+}
