@@ -3,42 +3,44 @@
     width: 100%;
     max-width: 1200px;
     
+    .headline {
+        font-size: 2rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
 
-    .section {
+    .m-section {
         display: grid;
-        grid-template-columns: 50px 1fr 1fr 50px;
+        grid-template-columns: 50px 1fr 15px 1fr 50px;
         align-items: center;
+        border-bottom: 1px solid gray;
         padding-bottom: 3rem;
 
         .item1 {
             grid-column-start: 2;
             grid-column-end: 3;
-            padding: 0 3rem;
+            
         }
 
         .item2 {
-            grid-column-start: 3;
-            grid-column-end: 4;
-            padding: 0 2rem;
+            grid-column-start: 4;
+            grid-column-end: 5;
         }
 
-        .main-image {
+        .image {
             text-align: center;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
 
-        h3 {
-            font-size: 1.6rem;
-            padding-bottom: 1.2rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.3rem;
+        .text-block {
+            padding: 0 2rem;
         }
 
     }
 
     
-       
 
+    
 }

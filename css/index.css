@@ -182,32 +182,34 @@ table {
   width: 100%;
   max-width: 1200px;
 }
-.main-content .section {
+.main-content .headline {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.main-content .m-section {
   display: grid;
-  grid-template-columns: 50px 1fr 1fr 50px;
+  grid-template-columns: 50px 1fr 15px 1fr 50px;
   align-items: center;
+  border-bottom: 1px solid gray;
   padding-bottom: 3rem;
 }
-.main-content .section .item1 {
+.main-content .m-section .item1 {
   grid-column-start: 2;
   grid-column-end: 3;
-  padding: 0 3rem;
 }
-.main-content .section .item2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  padding: 0 2rem;
+.main-content .m-section .item2 {
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
-.main-content .section .main-image {
+.main-content .m-section .image {
   text-align: center;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
-.main-content .section h3 {
-  font-size: 1.6rem;
-  padding-bottom: 1.2rem;
-}
-.main-content .section p {
-  font-size: 1.2rem;
-  line-height: 1.3rem;
+.main-content .m-section .text-block {
+  padding: 0 2rem;
 }
 .container {
   margin: 0 auto;
