@@ -130,7 +130,6 @@ table {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 5rem;
-  border-bottom: 1px solid darkgray;
 }
 @media (max-width: 500px) {
   .navigation {
@@ -173,13 +172,19 @@ table {
 }
 .navigation .nav-bar .nav-items .nav-item {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .navigation .nav-bar .nav-items .nav-item {
+    font-size: 1.5rem;
+  }
 }
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem 0 3.5rem;
+  border-top: 1px solid darkgray;
 }
 .header .app-logo {
   object-fit: none;
@@ -198,15 +203,18 @@ table {
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
-  border-bottom: 1px solid darkgray;
-  padding-bottom: 5rem;
+  padding: 0 5rem 5rem 5rem;
+}
+@media (max-width: 500px) {
+  .main-content {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
 }
 .main-content .headline {
   text-align: center;
-  padding: 5rem 0 2.5rem;
+  padding: 5rem 0 5rem;
 }
 .main-content .m-section {
-  padding: 0 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
@@ -248,6 +256,17 @@ table {
 @media (max-width: 500px) {
   .main-content .m-section .m-image .m-img {
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .m-section .m-image .dev-img {
+    width: auto;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,13 +277,13 @@ table {
   text-align: center;
   padding: 5rem 0 2.5rem;
 }
-.main-content {
+.about-content {
   max-width: 1000px;
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
 }
-.main-content .team-content {
+.about-content .team-content {
   padding: 4rem 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 265px);
@@ -273,7 +292,7 @@ table {
   justify-content: space-between;
 }
 @media (max-width: 900px) {
-  .main-content .team-content {
+  .about-content .team-content {
     grid-template-columns: repeat(2, 265px);
     grid-template-rows: auto;
     justify-content: center;
@@ -281,20 +300,20 @@ table {
   }
 }
 @media (max-width: 640px) {
-  .main-content .team-content {
+  .about-content .team-content {
     grid-template-columns: 265px;
     grid-template-rows: auto;
     justify-content: center;
     grid-column-gap: 5rem;
   }
 }
-.main-content .team-content .team-member {
+.about-content .team-content .team-member {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid lightgray;
   padding-bottom: 1rem;
 }
-.main-content .team-content .team-member img {
+.about-content .team-content .team-member img {
   width: 100%;
   height: auto;
   object-fit: fill;
@@ -307,6 +326,7 @@ table {
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
+  border-top: 1px solid darkgray;
 }
 .cta .cta-header {
   padding-bottom: 2rem;
@@ -367,7 +387,7 @@ h3 {
 }
 @media (max-width: 800px) {
   h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 h4 {
@@ -376,7 +396,4 @@ h4 {
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-}
-.container {
-  margin: 0 auto;
 }
