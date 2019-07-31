@@ -12,10 +12,19 @@
     .cta-button {
         width: 25rem;
         height: 6rem;
-        color: white;
         background-color: blue;
         border-radius: 5px;
+        color: white;
         font-size: 1.7rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: lightblue;
+            text-decoration: none !important;
+        }
 
         @media(max-width: 500px){
             width: 19rem;
