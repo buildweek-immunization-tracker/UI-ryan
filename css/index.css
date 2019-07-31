@@ -167,16 +167,19 @@ table {
 @media (max-width: 800px) {
   .navigation .nav-bar .nav-items {
     width: 100%;
-    justify-content: space-around;
   }
 }
 .navigation .nav-bar .nav-items .nav-item {
-  text-decoration: none;
   font-size: 1.7rem;
 }
 @media (max-width: 500px) {
   .navigation .nav-bar .nav-items .nav-item {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .navigation .nav-bar .nav-items .nav-item {
+    font-size: 1.3rem;
   }
 }
 .header {
@@ -276,6 +279,7 @@ table {
 .team-headline {
   text-align: center;
   padding: 5rem 0 2.5rem;
+  border-top: 1px solid darkgray;
 }
 .about-content {
   max-width: 1000px;
@@ -334,10 +338,18 @@ table {
 .cta .cta-button {
   width: 25rem;
   height: 6rem;
-  color: white;
   background-color: blue;
   border-radius: 5px;
+  color: white;
   font-size: 1.7rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.cta .cta-button:hover {
+  background-color: lightblue;
+  text-decoration: none !important;
 }
 @media (max-width: 500px) {
   .cta .cta-button {
@@ -359,6 +371,11 @@ table {
 }
 html {
   font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Barlow', sans-serif;
+  color: #484848;
 }
 h1 {
   font-size: 4rem;
@@ -390,10 +407,21 @@ h3 {
     font-size: 2.2rem;
   }
 }
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
 h4 {
   font-size: 1.8rem;
 }
 p {
   line-height: 1.5;
   font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
