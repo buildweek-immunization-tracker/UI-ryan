@@ -188,19 +188,22 @@ table {
   align-items: center;
   padding: 3rem 0 3.5rem;
   border-top: 1px solid darkgray;
+  background-image: url(/img/banner_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header .app-logo {
   object-fit: none;
   padding: 2rem 0;
 }
-.header h3 {
-  padding: 0 2rem 2rem 2rem;
-  text-align: center;
+.header h1 {
+  color: white;
 }
-.header .banner-image {
-  width: 100%;
-  height: auto;
-  object-fit: fill;
+.header h3 {
+  padding: 0 2rem;
+  text-align: center;
+  color: white;
 }
 .main-content {
   margin: 0 auto;
@@ -338,7 +341,7 @@ table {
 .cta .cta-button {
   width: 25rem;
   height: 6rem;
-  background-color: blue;
+  background-color: #0C0683;
   border-radius: 5px;
   color: white;
   font-size: 1.7rem;
@@ -359,7 +362,7 @@ table {
 }
 .footer {
   width: 100%;
-  background-color: blue;
+  background-color: #0C0683;
   text-align: center;
   padding: 3rem 0;
 }
