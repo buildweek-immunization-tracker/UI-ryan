@@ -171,6 +171,7 @@ table {
 }
 .navigation .nav-bar .nav-items .nav-item {
   font-size: 1.7rem;
+  color: #484848;
 }
 @media (max-width: 500px) {
   .navigation .nav-bar .nav-items .nav-item {
